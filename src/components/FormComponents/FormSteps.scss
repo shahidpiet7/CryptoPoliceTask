@@ -1,0 +1,92 @@
+.form-steps{
+    width: 100%;
+    clear: both;
+    &:before,
+      &:after {
+          display: table;
+          content: "";
+      }
+    &:after {
+          clear: both;
+      }
+  }
+  .form-steps__step{
+    width: 25%;
+    float: left;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    // progress line 
+    &:after {
+      content: "";
+      background: #8e8792;
+      height: 0.22rem;
+      top: 1.9rem;
+      left: 50%;
+      width: 100%;
+      display: block;
+      position: absolute;
+      z-index: 1;
+    }
+    // if is the last step
+    &:last-child{
+      &:after {
+        display: none;
+      }
+    }
+    
+    // if is the active (current) step
+    &--active {    
+      .form-steps__step-circle {    
+        background: #03C18E;
+        border: 2px solid #99ead4;
+        color: #fff;
+      }
+    }
+    // if is completed
+    &--completed {
+      &:after {
+        background: #03C18E;
+      }  
+      .form-steps__step-circle {    
+        background: #03C18E;
+        border: 2px solid #99ead4;
+        color: #fff;   
+        .form-steps__step-number {
+          display: none;
+        }    
+        .form-steps__step-check {
+          display: inline-block;
+        }
+      }
+    }
+    
+  } // End form steps
+  
+  // Steps circle
+  .form-steps__step-circle {
+    background: #736d77;
+    border: 2px solid rgba(201, 194, 206, 0.32);
+    line-height: 1.6rem;
+    border-radius: 50%;
+    height: 1.85rem;
+    width: 1.85rem;
+    text-align: center;
+    color: #cec5c5;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+  }
+
+  .form-steps__step-check {
+    display: none;
+  }
+  
+  // Steps name
+  .form-step__step-name {
+    margin-top: 0.6rem;
+    display: inline-block;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    color: #c6bbc7;
+  }

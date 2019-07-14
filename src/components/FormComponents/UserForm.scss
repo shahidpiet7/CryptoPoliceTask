@@ -1,0 +1,96 @@
+.linkButtonWrap{
+    text-align: center;
+    font-size: 0.85rem;
+    &:focus{
+        outline: none;
+    }
+}
+
+.blueButton{
+      // background: linear-gradient(0deg, #5B7DD6 0, #76ADDD 100%);
+      background: #03c18e;
+      // background: linear-gradient(2deg, #F64829 0, #F68265 100%);
+      color: #fff;
+      padding: 0.3rem 2rem;
+      height: 34px;
+      border: none;
+      width: 100%;
+      line-height: 1.6;
+      font-size: 0.9rem;
+      vertical-align: sub;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        // background: linear-gradient(0deg, #5B7DD6 0, #5B7DD6 40%, #76ADDD 100%);
+        background: #00ab7d;
+      }
+      &:focus{
+        outline: none;
+    }
+  }
+
+  input,select, textarea{
+    width: 100%;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    // border: 1px solid #382d3a;
+    // background-color: #352a40;
+    border: 1px solid #353f4c;
+    background-color: #080a0c;
+    color: #fff;
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+input,select{
+  height: 34px;
+}
+select{
+  cursor: pointer;
+}
+
+select:required:invalid {
+  color: #40464c;
+}
+option[value=""][disabled] {
+  display: none;
+}
+
+input[type='file']{
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+input::placeholder{
+  /* color: #7d727b; */
+  color: #40464c;
+}
+
+label{
+  color: #fff;
+    font-size: 0.95rem;
+}
+
+input[type="radio"], input[type="checkbox"]{
+  width: 16px;
+  height: 16px;
+}
+
+.validationMsg{
+  // color: #ff8d00;
+  color: #ff5400;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+  
+  .roundButton{
+  border-radius: 35px;
+  }
+  
+  
+

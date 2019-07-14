@@ -1,0 +1,33 @@
+.homeSec{
+    // background: linear-gradient(0deg, #573447 0, #423A56 100%);
+    background: linear-gradient(136deg, #161C26 21%, #333E4E 50%, #161C26 83%);
+    padding: 1.5rem 0 3rem;
+    min-height: calc(100vh - 116px);
+    .headingWrap{
+        text-align: center;
+        padding-bottom: 1rem;
+        h1{
+            font-size: 2rem;
+            font-weight: 300;
+            color: #fff;
+            font-size: 1.9rem;
+            @media(max-width: 678px){
+                font-size: 1.6rem;
+            }
+        }
+        p{
+            font-size: 1rem;
+            color: #fff;
+            font-weight: 300;
+        }
+    }
+    .FormDiv{
+        // background-color: rgba(255, 255, 255, 0.1803921568627451);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 25px 30px;
+        max-width: 710px;
+        margin: 0 auto;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        color: #fff;
+    }
+}

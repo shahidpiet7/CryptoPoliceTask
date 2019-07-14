@@ -1,0 +1,66 @@
+.ThankyouDashboardDiv{
+    border: 1px solid #333;
+    padding: 25px 5px;
+    color: #fff;
+    background-color: #2f343d;
+    .AvatarBox{
+        border: 1px solid #efefef;
+        background-color: #efefef;
+        width: 94px;
+        height: 100px;
+    }
+    .UserInfoBox{
+        p{
+            text-align: left;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .WebsiteAnalyses{
+        p{
+            margin-bottom: 0;
+        }
+        img{
+            width: 100px;
+        }
+    }
+    .DomainDetais{
+        text-align: left;
+        p{
+            font-size: 0.9rem;
+        }
+    }
+    .smileyFace{
+        img{
+            width: 50px;
+        }
+    }
+    .smileyDescripWrap{
+        padding-top: 1rem;
+        margin-bottom: 0;
+        >li{
+            padding-bottom: 5px;
+            padding-top: 5px;
+            &:first-child{
+                padding-top: 0;
+            }
+        }
+        .DescriptionContent{
+            text-align: left;
+            p, li{
+                font-size: 0.9rem;
+            }
+            .uppertTextUl{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+                li{
+                    &:last-child{
+                        padding-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

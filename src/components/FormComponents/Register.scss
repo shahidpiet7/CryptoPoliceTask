@@ -1,0 +1,36 @@
+.formInnerDiv{
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    padding: 25px 40px 25px 70px;
+    border-radius: 4px;
+    @media(max-width: 678px){
+        padding: 25px 20px;
+    }
+    .rowDiv{
+        margin-bottom: 15px;
+        .LabelWrap{
+            text-align: left;
+            padding-top: 0.3rem;
+            padding-bottom: 0.2rem;
+        }
+        .buttonWrap{
+            text-align: left;
+        }
+        .checkboxWrap{
+            text-align: left;
+            label{
+                cursor: pointer;
+                input[type="checkbox"]{
+                    cursor: pointer;
+                }
+            }
+            span{
+                vertical-align: top;
+                font-size: 0.833rem;
+                color: #a9a9a9;
+            }
+        }
+    }
+}
+
+
+

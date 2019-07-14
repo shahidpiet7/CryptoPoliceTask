@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+.App {
+  text-align: center;
+}
+
+ul, li{
+  list-style: none;
+}
+ul{
+  padding-left: 0;
+}
+
+input, select, textarea{
+  font-size: 0.9rem;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.whiteHeading{
+  color: #fff;
+  font-weight: 400;
+}
+
+.linkButton{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #868686;
+  color: #ababab;
+  transition: all 0.3s ease-in;
+  &:focus{
+      outline: none;
+  }
+  &:hover{
+    border-bottom: 1px solid #b9b9b9;
+    color: #d4d4d4;
+  }
+}
+
+

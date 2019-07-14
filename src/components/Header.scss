@@ -1,0 +1,26 @@
+.navSec{
+    background-color: #212121;
+    padding: 5px 0;
+    color: #fff;
+    .headerWrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a>img{
+            width: 145px;
+        }
+        .PageName a{
+            color: #fff;
+            font-size: 0.95rem;
+            margin-left: 10px;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
