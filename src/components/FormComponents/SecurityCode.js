@@ -18,7 +18,7 @@ export class SecurityCode extends Component {
   };
 
   render() {
-  const { values, handleChange, errors, securityCode } = this.props;
+  const { values, handleChange, errors } = this.props;
     return (
         <React.Fragment>
         <div>
@@ -65,11 +65,11 @@ export class SecurityCode extends Component {
                   <h4>Create your security code</h4>
                   <p>Enter code bellow</p>
               </div>
-              <div className="col-md-8 m-auto">
+              {/* <div className="col-md-8 m-auto">
                 <div className="seurityCodeBox">
                 {securityCode}
                 </div>
-              </div>
+              </div> */}
               <div className="col-md-8 m-auto">
                 <input type="text" onChange={handleChange('code')} defaultValue={values.code} placeholder="Enter security code" required/>
                 <p className="validationMsg">{errors.codeError}</p>

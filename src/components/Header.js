@@ -19,7 +19,7 @@ export class Header extends Component {
                     <div className="PageName">
                         <Link to="/">Home</Link>
                         <a href="https://www.linkedin.com/in/md-shahid-rahim-ab9344117/" target="_blank"><i className="fa fa-linkedin-square"></i>Linkdin</a>
-                        <a href="https://github.com/shahidpiet7" target="_blank"><i className="fa fa-github-square"></i>GitHub</a>
+                        <a href="https://github.com/shahidpiet7/CryptoPoliceTask" target="_blank"><i className="fa fa-github-square"></i>GitHub</a>
                     </div>
                 </div>
             </div>

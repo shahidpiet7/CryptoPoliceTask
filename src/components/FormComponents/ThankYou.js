@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './ThankYou.scss';
 import './FormSteps.scss';
 
 class ThankYou extends Component {
+
   continue = e => {
     e.preventDefault();
     // PROCESS FORM //
@@ -14,6 +16,18 @@ class ThankYou extends Component {
     this.props.prevStep();
   };
 
+  componentDidMount(){
+    axios.post(`https://watchdog-api-v1.cryptopolice.com/api/verify?domain=https://javascript.info`, this.props)
+        .then(response => {
+          console.log(response);
+          const UserData = response.data;
+          console.log(UserData);
+        })
+        .catch(error => {
+          console.log(error)
+      })
+  }
+  
   render() {
     const {
       values: { email, mobile, category, password, code, name, website, country, avatar } 

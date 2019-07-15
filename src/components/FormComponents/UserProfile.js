@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './FormSteps.scss';
+import './UserProfile.scss';
 
 class UserProfile extends Component {
   continue = e => {
@@ -15,9 +16,16 @@ class UserProfile extends Component {
     this.props.prevStep();
   };
 
-
   render() {
     const { values, handleChange, errors } = this.props;
+  // // const  dragNdropTextChange = () => {
+  // //     var txt = document.createTextNode("file(s) selected");
+  // //     console.log(txt);
+
+  // //     document.querySelector(".dragNdropBox p").textContent = txt;
+     
+  //   };
+
     return (
         <React.Fragment>
         <div>
@@ -111,7 +119,10 @@ class UserProfile extends Component {
               </div>
             </div>
             <div className="col-md-9">
+            <div className="dragNdropBox">
               <input type="file" onChange={handleChange('avatar')} defaultValue={values.avatar} id="fileId"/>
+              <p>Drag and drop files here</p>
+            </div>
             </div>
           </div>
 

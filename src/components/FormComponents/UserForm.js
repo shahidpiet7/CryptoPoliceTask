@@ -7,6 +7,7 @@ import ThankYou from './ThankYou';
 
 export class UserForm extends Component {
   state = {
+    allProjects: JSON.parse(localStorage.getItem('allProjects')) || [],
     step: 1,
     email: '',
     emailError: '',
@@ -18,7 +19,7 @@ export class UserForm extends Component {
     passwordError: '',
     checkbox: true,
     checkboxError: '',
-    securityCode: '6X24T04',
+    // securityCode: '6X24T04',
     securityCodeError: '',
     code: '',
     codeError: '',
@@ -78,9 +79,9 @@ export class UserForm extends Component {
     const errors = {
       codeError: ""
     };
-    if (this.state.code !== this.state.securityCode) {
+    if (this.state.code === null || this.state.code === '' || this.state.code.length < 6) {
       isError = true;
-      errors.codeError = "Security code not match";
+      errors.codeError = "Minimum 6 digit of security code";
     }
     this.setState({
       ...this.state,
@@ -128,13 +129,6 @@ export class UserForm extends Component {
     console.log(this.state.checkbox);
   };
 
- 
-  //  securityCodeFunc = e => {
-  //     this.setState({securityCode: Math.floor(Math.random() * 90000) + 10000});
-  //     console.log(this.state.securityCode);
-  //   }
-
-
   // Proceed to next step
   nextStep = () => {
     const { step,  } = this.state;
@@ -150,7 +144,15 @@ prevStep = () => {
     step: step - 1
   });
 };
- 
+
+addProject = (newProject) => {
+
+  this.setState({
+    allProjects: this.state.allProjects.concat(newProject)
+  },() => {
+    localStorage.setItem('allProjects', JSON.stringify(this.state.allProjects))
+  });
+}
 
   render() {
     const { step } = this.state;
