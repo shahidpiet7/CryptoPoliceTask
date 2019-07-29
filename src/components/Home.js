@@ -8,8 +8,8 @@ class Home extends Component {
             <section className="homeSec">
                 <div className="container">
                     <div className="headingWrap">
-                        <h1>Test task of CryptoPolice</h1>
-                        <p>You need create frontend and backend part of this webpage</p>
+                        <h1>React.js Multi-Step form </h1>
+                        <p>You need to fill all the fields.</p>
                     </div>
                     <div className="row">
                         <div className="col-12 col-md-8 m-auto">

@@ -14,7 +14,7 @@ export class Header extends Component {
             <div className="container">
                 <div className="headerWrap">
                     <Link to="/">
-                    <img src="./images/cryptopolice-logo2.png" alt="Logo" />
+                    <img src="./images/react-logo.png" alt="Logo" />
                     </Link>
                     <div className="PageName">
                         <Link to="/">Home</Link>
